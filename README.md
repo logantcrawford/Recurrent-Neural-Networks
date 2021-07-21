@@ -1,8 +1,15 @@
 # Recurrent Neural Networks
 
-![Recurrent Neural Networks: RNN, LSTM, GRU, BiLSTM](rnn.jpg)
+![Recurrent Neural Networks: RNN, LSTM, GRU, BiLSTM](assets/rnn.jpg)
 
 Recurrent Neural Networks (RNNs) are a popular model for many NLP tasks as they perform best with sequential data. For this short analysis, we will use a pre-canned IMDB dataset and test the capabilities of a standard RNN, a Gated Recurrent Unit (GRU), a standard Long Short-Term Memory (LSTM), and a bidirectional LSTM. We will then look into the advantages and disadvantages of the architectures. 
+
+## Download Dependencies 
+These dependencies are premade test and train files to check for the loss.
+
+[testIterator](https://www.dropbox.com/s/nwv5hwntotfbqgs/testIterator?dl=0)
+
+[trainIterator](https://www.dropbox.com/s/538a7lahxxtcwxu/trainIterator?dl=0)
 
 ## What's an RNN?
 RNNs are recurrent, meaning they perform the same task for every element sequence, with the output being dependent on the previous computations. This works similarly to having a memory that logs information. In theory, this architecture can handle arbitrarily long sequences; in practice, the standard RNN suffers from vanishing and exploding gradients. 
